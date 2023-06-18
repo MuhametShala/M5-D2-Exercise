@@ -1,5 +1,6 @@
 import "./App.css";
 import NavigationBar from './components/Head/NavigationBar';
+import Welcome from "./components/Head/Welcome";
 import React, { Component } from "react";
 import LatestRelease from "./components/Main/LatestRelease";
 import Footer from "./components/Footer/Footer";
@@ -13,6 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar />
+        <Welcome />
         <LatestRelease />
         <Footer />
       </div>

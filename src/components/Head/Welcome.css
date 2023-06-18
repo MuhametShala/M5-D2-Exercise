@@ -1,0 +1,47 @@
+.jumbotron {
+    margin-top: 2rem;
+    margin-bottom: auto;
+  }
+  
+  .jumbotron_title {
+    font-family: "Tangerine";
+    font-size: 50px !important;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron_title img {
+    width: 100px;
+  }
+  .jumbotron_subtitle {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .carouselBanner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* questo before mette il carousel in modalità scura a seconda del bg */
+  .carouselBanner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000099;
+  }
+  .carouselImg {
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 575px) {
+    .carouselImg {
+      height: 20rem;
+    }
+  }
